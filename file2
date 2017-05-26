@@ -1,0 +1,40 @@
+package com.example.mypackage;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+class Testing {
+	
+   public static void main(String[] args) {		
+	List<Employee>  s=new ArrayList<Employee>();
+	s.add(new Employee(1001, "NAVIN", "cse"));
+	s.add(new Employee(1001, "NAVIN", "cse"));
+	s.add(new Employee(1003, "BALA", "mech"));
+	s.add(new Employee(1004, "KORA", "cse"));	
+	List<Employee> list= new ArrayList();
+		 
+	  list.addAll(s);
+	     Set empIds= new HashSet();
+		 	  for(Iterator it=list.listIterator();it.hasNext();){
+		  Employee el=(Employee)it.next();
+		  
+		   
+		   if(empIds.add(el.getRoll_no())==false)
+		   {
+		    it.remove();
+		   }
+		  }
+		  
+		  for(Employee el:list){
+		   System.out.println(stu.getRoll_no());
+		   System.out.println(stu.getName());
+		  }	
+	}
+
+}
+	
+	
+
