@@ -1,0 +1,38 @@
+package com.example.mypackage;
+
+class Employee {
+int roll_no;
+String name;
+String dept;
+
+public Employee(int rollno,String name,String dept ) {
+this.roll_no=rollno;
+	this.name=name;
+	this.dept=dept;
+}
+public String toString(){
+	return name+""+roll_no+""+dept;
+	
+	
+
+}
+public int getRoll_no() {
+	return roll_no;
+}
+public void setRoll_no(int roll_no) {
+	this.roll_no = roll_no;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getDept() {
+	return dept;
+}
+public void setDept(String dept) {
+	this.dept = dept;
+}
+
+}
